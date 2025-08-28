@@ -1,0 +1,24 @@
+import { render, screen, fireEvent } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import App from "../App";
+
+test("login validation and success flow", () => {
+  render(
+    <MemoryRouter initialEntries={["/login"]}>
+      <App />
+    </MemoryRouter>
+  );
+
+  const input = screen.getByLabelText(/phone number/i);
+  const button = screen.getByRole("button", { name: /log in/i });
+
+  fireEvent.click(button);
+  expect(screen.getByText(/required/i)).toBeInTheDocument();
+
+  fireEvent.change(input, { target: { value: "0712345678" } });
+  fireEvent.click(button);
+  expect(screen.getByText(/country code/i)).toBeInTheDocument();
+
+  fireEvent.change(input, { target: { value: "+254712345678" } });
+  fireEvent.click(button);
+});
