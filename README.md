@@ -15,11 +15,11 @@ A small React app built for a technical interview task.
 
 ## Features
 
-- 🔑 **Login Page** – phone number validation & mock login  
-- 📃 **Main Page** – fetches posts from JSONPlaceholder, live search  
-- 📄 **Detail Page** – full post view with back/next navigation  
-- 🎨 **UI** – styled with Material UI, dark/red theme, hover effects  
-- ⚡ **Extras** – loading spinners, error handling, persistent auth  
+-  **Login Page** – phone number validation & mock login  
+-  **Main Page** – fetches posts from JSONPlaceholder, live search  
+-  **Detail Page** – full post view with back/next navigation  
+-  **UI** – styled with Material UI, dark/red theme, hover effects  
+-  **Extras** – loading spinners, error handling, persistent auth  
 
 ---
 
