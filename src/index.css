@@ -1,0 +1,10 @@
+/* Basic reset and pleasant defaults */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  background: #0a0a0a; /* dark mode-friendly; MUI will style components */
+  color: black;
+}
+a { color: inherit; text-decoration: none; }
